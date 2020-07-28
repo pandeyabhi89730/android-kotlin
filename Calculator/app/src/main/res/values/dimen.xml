@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextSizeCalculatorEquation">32sp</dimen>
+    <dimen name="TextSizeCalculatorOutput">28sp</dimen>
+    <dimen name="sizeIcon">24sp</dimen>
+    <dimen name="TextSizeEquationInput">38sp</dimen>
+</resources>

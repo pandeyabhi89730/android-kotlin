@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.pandey89730.calculator.calculator.CalculatorOutputView
+        android:id="@+id/output_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- header row -->
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_trash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_trash"
+        app:layout_constraintBottom_toTopOf="@+id/key_7"
+        app:layout_constraintEnd_toStartOf="@+id/id_Div"
+        app:layout_constraintRight_toLeftOf="@+id/id_Div"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_layout" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_Div"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_divide"
+        app:layout_constraintBottom_toTopOf="@+id/key_8"
+        app:layout_constraintLeft_toRightOf="@+id/id_trash"
+        app:layout_constraintRight_toLeftOf="@+id/id_multi"
+        app:layout_constraintTop_toBottomOf="@+id/output_layout" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_multi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_multiply"
+        app:layout_constraintBottom_toTopOf="@+id/key_9"
+        app:layout_constraintEnd_toStartOf="@+id/id_cancel"
+        app:layout_constraintLeft_toRightOf="@+id/id_Div"
+        app:layout_constraintRight_toLeftOf="@+id/id_cancel"
+        app:layout_constraintStart_toEndOf="@+id/id_Div"
+        app:layout_constraintTop_toBottomOf="@+id/output_layout"
+
+        />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_delete"
+        app:layout_constraintBottom_toTopOf="@+id/key_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/id_multi"
+        app:layout_constraintStart_toEndOf="@+id/id_multi"
+        app:layout_constraintTop_toBottomOf="@+id/output_layout" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="7"
+        app:layout_constraintBottom_toTopOf="@+id/key_4"
+        app:layout_constraintEnd_toStartOf="@+id/key_8"
+        app:layout_constraintRight_toLeftOf="@+id/key_8"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/id_trash"
+
+        />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="4"
+        app:layout_constraintBottom_toTopOf="@+id/key_1"
+        app:layout_constraintEnd_toStartOf="@+id/key_5"
+        app:layout_constraintRight_toLeftOf="@+id/key_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key_7" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="1"
+        app:layout_constraintBottom_toTopOf="@+id/key_percent"
+        app:layout_constraintEnd_toStartOf="@+id/key_2"
+        app:layout_constraintRight_toLeftOf="@+id/key_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key_4" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/key_0"
+        app:layout_constraintRight_toLeftOf="@+id/key_0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/key_1" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="9"
+        app:layout_constraintBottom_toTopOf="@+id/key_6"
+        app:layout_constraintLeft_toRightOf="@+id/key_8"
+        app:layout_constraintRight_toLeftOf="@+id/id_minus"
+        app:layout_constraintTop_toBottomOf="@+id/id_multi" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="6"
+        app:layout_constraintBottom_toTopOf="@+id/key_3"
+        app:layout_constraintLeft_toRightOf="@+id/key_5"
+        app:layout_constraintRight_toLeftOf="@+id/id_plus"
+        app:layout_constraintTop_toBottomOf="@+id/key_9" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="3"
+        app:layout_constraintBottom_toTopOf="@+id/key_empty"
+        app:layout_constraintLeft_toRightOf="@+id/key_2"
+        app:layout_constraintRight_toLeftOf="@+id/id_equal"
+        app:layout_constraintTop_toBottomOf="@+id/key_6" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_empty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_0"
+        app:layout_constraintRight_toLeftOf="@+id/id_null"
+        app:layout_constraintTop_toBottomOf="@+id/key_3" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_percent"
+        app:layout_constraintRight_toLeftOf="@+id/key_empty"
+        app:layout_constraintTop_toBottomOf="@+id/key_2" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="8"
+        app:layout_constraintBottom_toTopOf="@+id/key_5"
+        app:layout_constraintLeft_toRightOf="@+id/key_7"
+        app:layout_constraintRight_toLeftOf="@+id/key_9"
+        app:layout_constraintTop_toBottomOf="@+id/id_Div" />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="5"
+        app:layout_constraintBottom_toTopOf="@+id/key_2"
+        app:layout_constraintLeft_toRightOf="@+id/key_4"
+        app:layout_constraintRight_toLeftOf="@+id/key_6"
+        app:layout_constraintTop_toBottomOf="@+id/key_8"
+
+        />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/key_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_text="2"
+        app:layout_constraintBottom_toTopOf="@+id/key_0"
+        app:layout_constraintLeft_toRightOf="@+id/key_1"
+        app:layout_constraintRight_toLeftOf="@+id/key_3"
+        app:layout_constraintTop_toBottomOf="@+id/key_5" />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_minus"
+        app:layout_constraintBottom_toTopOf="@+id/id_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_9"
+        app:layout_constraintStart_toEndOf="@+id/key_9"
+
+        app:layout_constraintTop_toBottomOf="@+id/id_multi"
+
+        />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_add_"
+        app:layout_constraintBottom_toTopOf="@+id/id_equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_6"
+        app:layout_constraintStart_toEndOf="@+id/key_6"
+        app:layout_constraintTop_toBottomOf="@+id/id_minus"
+
+        />
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:item_icon="@drawable/ic_equal"
+        app:layout_constraintBottom_toTopOf="@+id/id_null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_3"
+        app:layout_constraintStart_toEndOf="@+id/key_3"
+        app:layout_constraintTop_toBottomOf="@+id/id_plus"
+
+        />
+
+
+    <com.pandey89730.calculator.CalculatorInputView
+        android:id="@+id/id_null"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/key_empty"
+        app:layout_constraintStart_toEndOf="@+id/key_empty"
+        app:layout_constraintTop_toBottomOf="@+id/id_equal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
